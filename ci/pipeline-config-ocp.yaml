@@ -2,47 +2,18 @@ production:
   type: ocp
   bundle:
     registry: quay.io
-    organization: okd-operators
+    organization: vrutkovs
   index:
     registry: quay.io
-    organization: okd-operators
+    organization: vrutkovs
     name: catalog_tmp
     tags:
-      - v4.6-db
-      - v4.7-db
-      - v4.8-db
-      - v4.9-db
-      - v4.10-db
-      - v4.11-rc
+      - v4.12-db
     latest: ""
     signature:
       enabled: 0
       alias: not-defined
       endpoint: https://not-defined
-  mirror:
-    enabled: 1
-    multiarch:
-      base: registry.redhat.io/openshift4/ose-operator-registry
-      base_tags:
-        - v4.5
-        - v4.6
-        - v4.7
-        - v4.8
-        - v4.9
-      postfix: s
-    registry: quay.io
-#    organization: community-operators-backup
-#    name: catalog_prod
-    organization: okd-operators
-    name: catalog
-    username:
-      in: mavala
-      out: mavala
-#      out: framework_automation
-#      out: redhat+iib_community
-#  test:
-#    installation_skip:
-#      - ack-
 
 pipeline:
   base: https://github.com
