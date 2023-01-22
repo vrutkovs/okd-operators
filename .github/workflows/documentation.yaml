@@ -10,7 +10,7 @@ on:
         required: true
         default: '5000'
 env:
-  OPP_THIS_REPO: "redhat-openshift-ecosystem/okd-operators"
+  OPP_THIS_REPO: "vrutkovs/okd-operators"
 
 jobs:
   documentation:
@@ -19,7 +19,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        repository: redhat-openshift-ecosystem/community-operators-pipeline
+        repository: vrutkovs/community-operators-pipeline
         ref: documentation
     - name: Generate docs
       env:

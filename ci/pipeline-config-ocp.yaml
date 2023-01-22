@@ -46,7 +46,7 @@ production:
 
 pipeline:
   base: https://github.com
-  repo: redhat-openshift-ecosystem/okd-operators
+  repo: vrutkovs/okd-operators
   branch: main
   ci_scripts_dir: https://raw.githubusercontent.com/redhat-openshift-ecosystem/community-operators-pipeline/ci/latest/ci/scripts
   image: quay.io/operator_testing/operator-test-playbooks:latest

@@ -33,7 +33,7 @@ jobs:
           OP_PR: ${{ github.event.client_payload.source_pr }}
         run: |
           tmpfile=$(mktemp /tmp/XXXXXX.json)
-          curl -s https://api.github.com/repos/redhat-openshift-ecosystem/okd-operators/pulls/$OP_PR -o $tmpfile
+          curl -s https://api.github.com/repos/vrutkovs/okd-operators/pulls/$OP_PR -o $tmpfile
           REPO_FULL=$(cat $tmpfile | jq -r '.head.repo.clone_url')
           BRANCH=$(cat $tmpfile | jq -r '.head.ref')
           COMMIT=$(cat $tmpfile | jq -r '.head.sha')
@@ -59,9 +59,9 @@ jobs:
           OPP_OPRT_SHA: ${{ steps.variables.outputs.opp_commit }}
           OPP_SCRIPT_ENV_URL: "https://raw.githubusercontent.com/redhat-openshift-ecosystem/community-operators-pipeline/ci/latest/ci/scripts/opp-osr-run.sh"
           OPP_OPRT_SRC_BASE:  "https://github.com"
-          OPP_OPRT_SRC_REPO:  "redhat-openshift-ecosystem/okd-operators"
+          OPP_OPRT_SRC_REPO:  "vrutkovs/okd-operators"
           OPP_OPRT_SRC_BRANCH: "main"
-#          REPO: "redhat-openshift-ecosystem/okd-operators.git"
+#          REPO: "vrutkovs/okd-operators.git"
 #          BRANCH: "main"
 
         run: |
@@ -73,4 +73,3 @@ jobs:
           echo
           echo
           bash <(curl -sL https://raw.githubusercontent.com/redhat-openshift-ecosystem/community-operators-pipeline/ci/latest/ci/scripts/opp-oprt.sh)
-

@@ -45,7 +45,7 @@ env:
   IIB_INPUT_REGISTRY_USER: "mavala"
   OPP_REGISTRY_MIRROR_USER: "mavala"
   OPP_THIS_REPO_BASE: "https://github.com"
-  OPP_THIS_REPO: "redhat-openshift-ecosystem/okd-operators"
+  OPP_THIS_REPO: "vrutkovs/okd-operators"
   OPP_THIS_BRANCH: "main"
   OPP_REVIEWERS_ENABLED: 0
 

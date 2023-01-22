@@ -18,7 +18,7 @@ env:
   OPP_ANSIBLE_PULL_REPO: "https://github.com/redhat-openshift-ecosystem/operator-test-playbooks"
   OPP_ANSIBLE_PULL_BRANCH: "upstream-community"
   OPP_THIS_REPO_BASE: "https://github.com"
-  OPP_THIS_REPO: "redhat-openshift-ecosystem/okd-operators"
+  OPP_THIS_REPO: "vrutkovs/okd-operators"
   OPP_THIS_BRANCH: "main"
   OPP_PROD: 0
   OPP_DRY_RUN: 0
@@ -109,4 +109,3 @@ jobs:
       #         repo: context.repo.repo,
       #         body: '/merge possible'
       #       })
-
