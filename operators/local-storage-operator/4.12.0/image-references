@@ -6,12 +6,12 @@ spec:
   - name: local-storage-operator
     from:
       kind: DockerImage
-      name: quay.io/openshift/origin-local-storage-operator:latest
+      name: quay.io/openshift/origin-local-storage-operator:4.12
   - name: local-storage-diskmaker
     from:
       kind: DockerImage
-      name: quay.io/openshift/origin-local-storage-diskmaker:latest
+      name: quay.io/openshift/origin-local-storage-diskmaker:4.12
   - name: kube-rbac-proxy
     from:
       kind: DockerImage
-      name: quay.io/openshift/origin-kube-rbac-proxy:latest
+      name: quay.io/openshift/origin-kube-rbac-proxy:4.12
