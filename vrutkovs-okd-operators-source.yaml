@@ -4,7 +4,7 @@ metadata:
   name: vrutkovs-okd-operators
   namespace: openshift-marketplace
 spec:
-  displayName: Community Operators
+  displayName: vrutkovs OKD Operators
   grpcPodConfig:
     nodeSelector:
       kubernetes.io/os: linux
@@ -26,9 +26,9 @@ spec:
   icon:
     base64data: ''
     mediatype: ''
-  image: 'registry.access.redhat.com/redhat/community-operator-index:v4.12'
+  image: 'ghcr.io/vrutkovs/okd-operators:latest'
   priority: -400
-  publisher: Red Hat
+  publisher: Vadim Rutkovsky
   sourceType: grpc
   updateStrategy:
     registryPoll:
